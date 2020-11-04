@@ -6,7 +6,6 @@ SET(CMAKE_CXX_STANDARD 11)
 
 
 ADD_EXECUTABLE(rectangle
-    src/main.cpp
     src/rectangle.cpp
 )
 
