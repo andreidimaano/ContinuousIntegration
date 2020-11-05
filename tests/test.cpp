@@ -42,6 +42,28 @@ TEST(RectTest, PerimeterOneCheck) {
     EXPECT_EQ(rect->perimeter(), 4);
 }
 
+
+//Constructor
+TEST(RectTest, ConstructorZeroCheckHeight) {
+   Rectangle *rect = new Rectangle();
+   EXPECT_EQ(rect->get_height(), 0);
+}
+
+TEST(RectTest, ConstructorZeroCheckWidth) {
+   Rectangle *rect = new Rectangle();
+   EXPECT_EQ(rect->get_width(), 0);
+}
+
+TEST(RectTest, CostructorParamOneCheckHeight) {
+   Rectangle *rect = new Rectangle(1,1);
+   EXPECT_EQ(rect->get_height(), 1);
+}   
+
+TEST(RectTest, ConstructorParamOneCheckWidth) {
+   Rectangle *rect = new Rectangle(1,1);
+   EXPECT_EQ(rect->get_width(),1);
+}
+
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
