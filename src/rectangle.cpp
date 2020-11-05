@@ -25,3 +25,11 @@ Rectangle::Rectangle() {
 int Rectangle::perimeter() {
     return this->width * 2 - this->height * 2;
 }
+
+int Rectangle::get_width() {
+    return this->height;
+}
+
+int Rectangle::get_height() {
+    return this->width;
+}
